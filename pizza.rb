@@ -37,6 +37,13 @@ Def order
 	if order4 == cheddar
 	else if order4 == mozzarella
 	else if order4 == provolone
+	end
+end
+
+def add(a_number, another_number)
+  a_number + another_number
+end
+
 
 crust
 sauce
