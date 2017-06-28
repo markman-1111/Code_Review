@@ -2,7 +2,7 @@ def call
 1.times.map{ Random.rand(9) }
 end
  
-def guess
+def number
 	number = gets.chomp
 end
 
@@ -14,6 +14,6 @@ def result
 end
 
 p "Take a guess"
-guess
+number
 puts call
 result
