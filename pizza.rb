@@ -1,56 +1,62 @@
 def crust
-	[White, Wheat, thin, deepdish]
+	p "What type of bread? White, wheat, thin, or deepdish?"
+	Order1 == [White, Wheat, thin, deepdish]
 end
 
 def sauce
-	[Marinara, Alfredo, chunky]
+	p "And your sauce? What sort? Marinara, Alfredo, chunky"
+	Order2 == [Marinara, Alfredo, chunky]
 end
 
 def topping
-	[Pepperoni, sausage, peppers, bacon, ham]
+	p "And on top? Pepperoni, sausage, peppers, bacon, hame"
+	Order == [Pepperoni, sausage, peppers, bacon, ham]
 end
 
 def cheese
-	[cheddar, mozzarella, provolone,]
+	"And your melty cheese on top. Which kind? cheddar, mozzarella, provolone"
+	Order == [cheddar, mozzarella, provolone,]
 end
 
-Def order
-	order1 = gets.chomp
+def order1 = gets.chomp
 	if order1 == White
 		then p "White crust"
-	else if order1 == Wheat
-		then p "Wehat crust"
-	else if order1 == thin
+	elsif order1 == Wheat
+		then p "Wheat crust"
+	elsif order1 == thin
 		then p "Thin crust"
-	else if order1 == deepdish
+	elsif order1 == deepdish
 		then p "Deepdish"
 	end
-	order2 = gets.chomp
+end
+def order2 = gets.chomp
 	if order2 == Marinara
 		then p "Marinara sauce"
-	else if order2 == Alfredo
+	elsif order2 == Alfredo
 		then p "Alfredo sauce"
-	else if order2 == chunky
+	elsif order2 == chunky
 		then p "Chunky marinara"
 	end
-	order3 = gets.chomp
+end
+def order3 = gets.chomp
 	if order3 == Pepperoni
 		then p "Pepperoni"
-	else if order3 == sausage
+	elsif order3 == sausage
 		then p "Sausage"
-	else if order3 == peppers
+	elsif order3 == peppers
 		then p "Peppers"
-	else if order3 == bacon
+	elsif order3 == bacon
 		then p "Bacon"
-	else if order3 == ham
+	elsif order3 == ham
 		then p "ham"
 	end
-	order4 = gets.chomp
+end
+def order4 = gets.chomp
 	if order4 == cheddar
 		then p "Cheddahcheese"
-	else if order4 == mozzarella
+	elsif order4 == mozzarella
 		then p "Melted Mozz"
-	else if order4 == provolone
+	elsif order4 == provolone
 		then p "Provolone"
 	end
 end
@@ -64,3 +70,4 @@ crust
 sauce
 cheese
 topping
+end
