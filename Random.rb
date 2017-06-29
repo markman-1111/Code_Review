@@ -9,7 +9,10 @@ end
 def result
 	if number == call
 		then p "Winner!"
-	else p "Loser!"
+	elsif number > call
+		then p "Too high!"
+	elsif number < call
+		then p "Too low!"
 	end
 end
 
