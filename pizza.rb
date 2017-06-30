@@ -1,24 +1,24 @@
-def crust
+def q1
 	p "What type of bread? White, wheat, thin, or deepdish?"
 	Order1 == [White, Wheat, thin, deepdish]
 end
 
-def sauce
+def q2
 	p "And your sauce? What sort? Marinara, Alfredo, chunky"
 	Order2 == [Marinara, Alfredo, chunky]
 end
 
-def topping
+def q3
 	p "And on top? Pepperoni, sausage, peppers, bacon, hame"
 	Order == [Pepperoni, sausage, peppers, bacon, ham]
 end
 
-def cheese
+def q4
 	"And your melty cheese on top. Which kind? cheddar, mozzarella, provolone"
 	Order == [cheddar, mozzarella, provolone,]
 end
 
-def order1 = gets.chomp
+def Crust
 	if order1 == White
 		then p "White crust"
 	elsif order1 == Wheat
@@ -29,7 +29,7 @@ def order1 = gets.chomp
 		then p "Deepdish"
 	end
 end
-def order2 = gets.chomp
+def Sauce
 	if order2 == Marinara
 		then p "Marinara sauce"
 	elsif order2 == Alfredo
@@ -38,7 +38,7 @@ def order2 = gets.chomp
 		then p "Chunky marinara"
 	end
 end
-def order3 = gets.chomp
+def Toppings
 	if order3 == Pepperoni
 		then p "Pepperoni"
 	elsif order3 == sausage
@@ -51,7 +51,7 @@ def order3 = gets.chomp
 		then p "ham"
 	end
 end
-def order4 = gets.chomp
+def Cheese
 	if order4 == cheddar
 		then p "Cheddahcheese"
 	elsif order4 == mozzarella
